@@ -6,12 +6,17 @@ variable "region" {
 
 variable "cluster_name" {
   description = "EKS Cluster Name"
-  type = string
-  default = "EKS-Cluster"
+  type        = string
+  default     = "EKS-Cluster"
 }
 
 variable "cluster_version" {
   description = "EKS Cluster Version"
+  type        = string
+  default     = "1.29"
+}
+
+variable "env" {
+  description = "Environment Description"
   type = string
-  default = "1.30.3"
 }

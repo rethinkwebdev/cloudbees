@@ -1,0 +1,4 @@
+bucket  = "cloudbees-terraform-state"
+key     = "prod/main.tfstate"
+region  = "us-east-1"
+encrypt = "true"
