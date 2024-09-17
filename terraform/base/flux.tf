@@ -6,6 +6,7 @@ resource "github_repository_deploy_key" "deploy_key" {
   title      = "${var.env} - Flux CD Deploy Key"
   repository = data.github_repository.repo.name
   key        = data.onepassword_item.deploy_key.public_key
+  read_only  = false
 }
 
 data "onepassword_vault" "vault" {
