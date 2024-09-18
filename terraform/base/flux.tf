@@ -21,7 +21,7 @@ data "onepassword_item" "deploy_key" {
 # Bootstrap 
 
 resource "flux_bootstrap_git" "this" {
-  depends_on         = [github_repository_deploy_key.deploy_key, module.eks]
+  depends_on         = [github_repository_deploy_key.deploy_key]
   embedded_manifests = true
   path               = "kubernetes/envs/${var.env}"
 }
