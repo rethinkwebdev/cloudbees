@@ -9,6 +9,6 @@ data:
    <html>
    <head><title>Hello from Prod</title></head>
    <body>
-   <h1>Hello from PROD! Some change to just prod</h1>
+   <h1>Hello from PROD!</h1>
    </body>
    </html>
